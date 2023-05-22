@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637529041523",
+    "project_id": "wallapp-545b2",
+    "storage_bucket": "wallapp-545b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637529041523:android:3da197d202661d20d7d806",
+        "android_client_info": {
+          "package_name": "com.wallapp.beginbetter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637529041523-8ujop2psqbc8nb6nqnvgtet8hp4bh74f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5y-dyvjoNVALPs3x42CTSoxCVV4yt9W8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637529041523-8ujop2psqbc8nb6nqnvgtet8hp4bh74f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
