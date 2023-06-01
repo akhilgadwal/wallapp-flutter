@@ -51,59 +51,59 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.grey.shade400,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Column(children: [
-            //icons
-            const Icon(
-              Icons.lock,
-              size: 30,
-            ),
-            //welcometext
-            const Text(
-              'Welcome Back You have been Missed',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            //textfield
-            MyTextField(
-                obsureText: false,
-                controller: emailController,
-                hintText: 'Enter Email'),
-            const SizedBox(
-              height: 10,
-            ),
-            //password text field
-            MyTextField(
-                obsureText: obsureText,
-                controller: passController,
-                hintText: 'Enter Password'),
-            //login or registe button
-            MyButton(
-              text: 'Sign-In',
-              onTap: signIn,
-            ),
-            Row(
-              children: [
-                Text(
-                  'Not a member ? ',
-                  style: TextStyle(color: Colors.grey.shade50),
-                ),
-                GestureDetector(
-                  onTap: widget.onTap,
-                  child: const Text(
-                    'Register Now',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold,
-                    ),
+            padding: const EdgeInsets.all(25.0),
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              //icons
+              const Icon(
+                Icons.lock,
+                size: 30,
+              ),
+              //welcometext
+              const Text(
+                'Welcome Back You have been Missed',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              //textfield
+              MyTextField(
+                  obsureText: false,
+                  controller: emailController,
+                  hintText: 'Enter Email'),
+              const SizedBox(
+                height: 10,
+              ),
+              //password text field
+              MyTextField(
+                  obsureText: obsureText,
+                  controller: passController,
+                  hintText: 'Enter Password'),
+              //login or registe button
+              MyButton(
+                text: 'Sign-In',
+                onTap: signIn,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'Not a member ? ',
+                    style: TextStyle(color: Colors.grey.shade50),
                   ),
-                )
-              ],
-            )
-          ]),
-        ),
+                  GestureDetector(
+                    onTap: widget.onTap,
+                    child: const Text(
+                      'Register Now',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
+                ],
+              )
+            ])),
       ),
     );
   }
